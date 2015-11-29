@@ -9,7 +9,7 @@ var task =  function(request, callback){
 		ec2.describeInstances({}, function(err, data){
 		if(err){callback(err);}
 		else{callback(null, data);}
-		}};
+		});
 }
 
 exports.lab = task
