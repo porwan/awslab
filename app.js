@@ -7,6 +7,7 @@ var PORT = 8080;
 var urlMap = [
 	{path: "/", action:__dirname + "/static/index.html"},	 
 	{path: "/digest", action: lab1_1},	
+	{path: "/hello", action: lab1_2},	
 	{path: "/example_1", action: example_1}, 
 	];
 
