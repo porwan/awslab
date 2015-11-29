@@ -7,8 +7,8 @@ var task =  function(request, callback){
 		callback(null, "hello");
 		var ec2 = new AWS.EC2();
 		ec2.describeInstances({}, function(err, data){
-		if(err){callback(err);}
-		else{callback(null, data);}
+		if(err){callback(JSON.stringify(err));}
+		else{callback(null, JSON.stringify(data));}
 		});
 }
 
